@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voting Guideline</title>
+    <style>
+      /* Reset and Base Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        background-color: #f4f7f6;
+        color: #da29ab;
+        line-height: 1.6;
+      }
+
+      /* Navigation */
+      header {
+        background-color: #ff8be1;
+        color: #fff;
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+      }
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .nav-links a:hover {
+        color: #b7ff4a;
+      }
+
+      /* Hero Section */
+      .hero {
+        /* Replace with your exact filename (e.g., background.jpg or wallpaper.png) */
+        background: url("Neon Green and Green Voter Education Flyers - Real Estate Flyer.jpg")
+        no-repeat center center/cover;
+        color: #cb4c4c
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        max-width: 600px;
+      }
+      .btn {
+        display: inline-block;
+        background-color: #ff8be1;
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background 0.3s;
+      }
+      .btn:hover {
+        background-color: #b7ff4a;
+      }
+
+      /* Features/Services Section */
+      .services {
+        max-width: 1100px;
+        margin: 4rem auto;
+        padding: 0 1rem;
+      }
+      .services h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+      .card {
+        background: #ff8be1;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .card h3 {
+        margin-bottom: 1rem;
+        color: #b7ff4a;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #ff8be1;
+        color: #fff;
+        text-align: center;
+        padding: 2rem 1rem;
+        margin-top: 4rem;
+      }
+
+      /* Responsive Mobile Tweak */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+        .nav-container {
+          flex-direction: column;
+          gap: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Navigation inside index.html -->
+    <header>
+      <div class="nav-container">
+        <!-- Clicking the logo takes you back to the home page -->
+        <div class="logo">
+          <a href="index.html" style="color: white; text-decoration: none"
+            >Voting Guideline</a
+          >
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="design.html">Registration</a></li>
+          <li><a href="development.html">Ballot Info</a></li>
+          <li><a href="seo.html">Voting Day</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Introduction -->
+    <section class="hero" id="home">
+      <h1>Vote for a better future!</h1>
+      <p>
+        This is a guideline to help people vote and understand what they are
+        voting for. Your vote is the start of a new future.
+      </p>
+      <a href="https://www.creighton.edu/news/why-midterm-elections-matter-political-scientist-explains" class="btn">Learn More</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="services" id="services">
+      <h2>Voting Tips</h2>
+      <div class="grid">
+        <!-- Card 1 links to design.html -->
+        <a href="design.html" class="card">
+          <h3>Voter Registration</h3>
+          <p>Wonder where to start the proccess of voting? Register first!</p>
+        </a>
+
+        <!-- Card 2 links to development.html -->
+        <a href="development.html" class="card">
+          <h3>Ballot Information</h3>
+          <p>
+            What are we voting for? Here are links to information on what you
+            are set to vote for.
+          </p>
+        </a>
+
+        <!-- Card 3 links to seo.html -->
+        <a href="seo.html" class="card">
+          <h3>Early Voting & Official Voting Day</h3>
+          <p>
+            Want to get it done as soon as possible? Check on available early
+            voting days before Nov. 3rd.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        This is a disclaimer that we do not replace official government
+        websites. Our sole purpose is to advocate for your rights.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* New properties to fix link formatting: */
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
